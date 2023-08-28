@@ -29,7 +29,7 @@ To start using Sass, you need to install it on your system. Follow these steps:
 
 3. Install Sass globally using Node Package Manager (npm):
 
-``` npm install -g sass ```
+`npm install -g sass`
 
 ## Basic Usage
 
@@ -43,12 +43,12 @@ Sass files have the `.scss` extension and can be compiled into standard CSS file
 
 sass input.scss output.css
 
-
 ## Variables
 
 Sass allows you to use variables to store values that you can reuse throughout your stylesheets. This makes it easier to maintain consistency.
 
 Example:
+
 ```
 $primary-color: #007bff;
 $link-color: $primary-color;
@@ -57,11 +57,13 @@ a {
 color: $link-color;
 }
 
-```
+   ```
 
 ## Nesting
+
 Sass enables you to nest selectors inside one another, improving readability and reducing repetition.
 Example :
+
 ```
 nav {
   ul {
@@ -74,12 +76,14 @@ nav {
   }
 }
 
-```
+   ```
 
 ## Mixins
+
 Mixins in Sass are reusable sets of CSS declarations. They can take arguments, allowing you to create dynamic styles.
 
 Example:
+
 ```
 @mixin border-radius($radius) {
   border-radius: $radius;
@@ -88,9 +92,10 @@ Example:
 .button {
   @include border-radius(5px);
 }
-```
+  ```
 
 ## Import
+
 Sass allows you to split your styles into multiple files and import them where needed.
 
 Example:
@@ -104,15 +109,17 @@ $primary-color: #007bff;
 
 body {
   background-color: $primary-color;
-}
-```
+} 
+  ```
 
 ## Resources
+
 Sass Official Documentation [https://sass-lang.com/documentation]
 Sass Guidelines [https://sass-guidelin.es/]
 
 ## Contributing
+
 Contributions are welcome! If you find any issues or want to add enhancements to this repository, feel free to open a pull request.
 
-License
+## License
 This project is licensed under the MIT License.
